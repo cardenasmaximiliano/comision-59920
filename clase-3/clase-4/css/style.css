@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgba(119, 136, 153, 0.382);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0px ;
+    /* left: ;
+    right: ;
+    bottom: ; */
+}   
+/*
+position = esta en todas las etiquetas de manera estatica o static
+
+static
+
+absolute
+relative
+fixed 
+sticky
+
+
+
+**/
+nav{
+ 
+    display: flex;
+    justify-content: center;
+    /* 
+    max-height: ;max-width
+    min-height: ;  min-width
+    */
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    
+
+}
+ .navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+} 
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url("../assets/img/banner.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding-left: 6.25rem;
+}
+.banner div{
+    width: 500px;
+}
+
+.banner div h1{
+    margin-bottom: 40px;
+}
+.banner div p{
+    padding: 20px 20px ;
+    background-color: rgba(0, 0, 0, 0.244);
+}
+.card-container{
+
+    width: 250px;
+    height: 300px;
+    background-color: lightblue;
+    text-align: center;
+    
+     /**display*/
+}
+.card-container h3{
+    padding-top: 20px ;
+}
+.card-container div{
+    width: 100%;
+    height: 200px;
+}
+.card-container div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-productos{
+    display: flex;
+
+    /* flex-direction - flex-wrap*/
+    /*flex direction viene en ROW**/
+    height: 600px;
+    background-color: rgb(6, 6, 6);
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+    /*justify-content , align items*/
+
+    justify-content: center ; /**flex-start center flex-end / space-between space-evenly space-around*/
+    align-items: center;
+    gap: 50px;
+
+}
+
+.article1{
+    background-color: lightgreen;
+    align-self: flex-start;
+    order: 3;
+}
+
+.article2{
+    background-color: lightpink;
+    order: 2;
+    position: relative;
+    bottom: 100px;
+}
+
+.article3{
+    background-color: lightyellow;
+    align-self: flex-end;
+    order: 1;
+}
+
+.article4{
+    background-color: lightskyblue;
+    order: 4;
+    position: relative;
+
+   
+}
+
+.wtsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.boton-absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
