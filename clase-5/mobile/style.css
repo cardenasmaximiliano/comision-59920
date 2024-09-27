@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p{
+    margin-bottom: 1.25rem;
+}
+
+img{
+  display: none;
+}
+
+
+@media(min-width:425px){
+    section{
+        display: flex;
+    }
+   
+}
+
+@media(min-width: 768px){
+    img{
+        display: block;
+    }
+}
