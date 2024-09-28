@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5px;
+    background-color: rgba(135, 206, 250, 0.238);
+}
+
+p::selection{
+    color: rgb(252, 5, 5);
+    background-color: black;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+input{
+    border-radius: .3125rem;
+    border: none;
+    padding: 5px 10px;
+}
+
+input:focus{
+    all: unset;
+    border: 1px solid red;
+    border-radius: .3125rem;
+    background-color: white;
+}
+
+input::placeholder{
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a{
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+/*
+hover es una pseudoclase que funciona solamente 
+cuando el usuario pasa el cursos por encima del elemento 
+
+*/
+
+.navbar li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/*section principal*/
+
+.section-principal{
+    width: 100%;
+    height: 31.25rem;
+    background-image: url("../assets/img/iphone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-principal h1{
+    font-size: 40px;
+    
+}
+.section-principal div button{
+    background-color: transparent;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid blue;
+}
+/**
+active como pseudoclase funciona siempre y cuando este 
+presionado o clickeado el elemento. 
+
+
+*/
+.section-principal div button:active{
+    color: white;
+    background-color: blue;
+
+}
+
+
+/*productos*/
+.productos-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.card{
+    width: 15.625rem;
+    height: 18.75rem;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 15.625rem;
+    object-fit: contain;
+   
+}
+
+.card img:hover{
+    filter: none;
+}
+
+.productos-container .card:nth-child(2){
+    background-color: lightblue;
+}
+
+.productos-container .card:nth-child(5) {
+    background-color: lightsalmon;
+}
+
+.productos-container .card:nth-child(5) h3{
+    color: white;
+}
+
+.productos-container .card:first-child{
+    background-color: lightslategray;
+}
+
+.productos-container .card:last-child{
+    background-color: lightyellow;
+}
+
+.parrafos{
+    display: flex;
+}
+
+p:not(.notToDay){
+    background-color: blue;
+    color: white;
+}
+
+/*
+pseudoelementos: funcionan para darle mas propiedades
+a una etiqueta especifica. Y nos sirve para dar estilos
+a lugar de la etiqueta donde seria complicado acceder.
+
+*/
+
+h1::first-letter{
+    font-size: 3.125rem;
+}
+
+h1:hover::before{
+    content: "La mejor 😊";
+    color: greenyellow;
+
+}
+
+h1:hover::after{
+    content: url("");
+    background-color: lightcoral;
+}
+
+/*
+BEM = ESTA PENSADO PARA PROYECTOS GRANDES DONDE TRABAJAN MAS DE 2 PROGRAMADORES.
+Es una documentacion y consenso entre los participantes.
+
+
+
+bloque => contenedor padre del codigo
+elemento => el hijo que va a ser afectado
+modificador => la modificacion exacta que se va a aplicar
+
+*/
+
+
+.header__nav .nav__ul--flex{
+
+}
