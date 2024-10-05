@@ -1,0 +1,26 @@
+/*
+
+variable = algo que puede variar.
+variable = espacio de memoria reservado para 
+almacenar un tipo de dato, el tipo de dato
+puede variar.  
+
+
+:root => esto sirve solamente para css. 
+:root{
+    --color-primario: red;
+}
+
+*/
+
+/*las variables van a funcionar en cualquier lugar
+donde se las aplique como valor*/
+// $color-principal: rgb(0, 0, 0);
+// $color-texto: #fff307;
+
+/*
+cuando tenemos colecciones de valores que son iguales.
+podemos utilizar maps, 
+*/
+
+$pepito-variable: rgba(42, 249, 204, 0.586);

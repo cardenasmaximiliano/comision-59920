@@ -1,0 +1,12 @@
+.navbar{
+    @include flex(row, flex-end, center, 1.25rem);
+
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: map-get($colores-sitio, color2 );
+            font-size: 1.5625rem;
+        }
+    }
+}

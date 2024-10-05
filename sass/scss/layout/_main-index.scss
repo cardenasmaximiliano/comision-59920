@@ -1,0 +1,31 @@
+.main-index{
+    background-color: grey;
+    @include grid-areas(repeat(3,1fr),repeat(4,1fr),none,"item1 item1 item1""item2 item2 item2""item3 item3 item3""item4 item4 item4");
+    .section-principal{
+        h1{
+            text-align: center;
+            color: map-get($colores-sitio, color1 );
+            font-size: map-get($fuentes-sitio , lg );
+        }
+    }
+}
+
+
+.ejemplo1{
+    background-color: blue;
+    font-size: 1.875rem;
+    font-weight: 100;
+    text-align: center;
+    color:$pepito-variable;
+    box-shadow: 2px 2px 2px black;
+}
+
+.ejemplo2{
+    @extend .ejemplo1;
+    color: black;
+}
+
+.ejemplo3{
+    @extend .ejemplo2;
+    text-align: right;
+}

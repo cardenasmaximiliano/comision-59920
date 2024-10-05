@@ -1,0 +1,41 @@
+/*
+las funciones nos permiten a nosotros generar bloques de codigo
+que cumplen una determina orden.
+
+los mixins funcionan igual, los mixins poseen propiedades
+que trabajan en conjunto para cumplir una determina orden
+
+estaticos o dinamicos, 1º el cumple una funcion dada por 
+el programador. Si es dinamico, el mixin va modificandose,
+dependiendo los valores que aplique el programador.
+
+*/
+
+
+@mixin flex($direction,$justify, $align, $gap){
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+
+
+}
+
+@mixin grid-areas($col,$row,$gap,$areas){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    gap: $gap;
+    grid-template-areas: $areas;
+}
+
+@mixin grid-sinAreas($col,$row,$gap){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    gap: $gap;
+}
+
+

@@ -1,0 +1,48 @@
+/*
+siempre tenemos que llamar primero a los partials que esten en utilities
+*/
+
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/*
+se llama a todo lo que  corresponde en base
+*/
+
+@import "./base/reset";
+
+/*
+llamamos a todo lo que este en layout
+*/
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+/*
+llamamos a todos los componentes
+*/
+
+@import "./components/navbar";
+@import "./components/cards";
+
+
+/*
+siempre al final los mediaquery
+
+si el sitio se piensa desde mobile first el orden es creciente, vamos de lo chico a lo grande
+
+@media (tablet)
+@media(desktop)
+
+
+si el sitio se piensa desde responsive web design el orden es decreciente, vamos de lo grande a lo chico.
+
+@media(tablet)
+@media(mobile)
+
+*/
+
+@import "./layout/mediaQ/media320";
+
+

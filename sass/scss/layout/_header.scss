@@ -1,0 +1,22 @@
+header{
+    @include flex(row,center,center,2.5rem);
+    padding: 20px 30px;
+    background-color: map-get($colores-sitio , color3 );
+    div{
+        img{
+            width: 4rem;
+        }
+    } 
+}
+
+/*
+
+function saludo(nombre, apellido){
+
+
+}
+
+
+saludo(pedro, suarez)
+
+*/

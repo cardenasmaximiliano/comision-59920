@@ -1,0 +1,17 @@
+.bg-mio{
+    background-color: rgb(251, 251, 131);
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.img-props{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
